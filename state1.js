@@ -5,7 +5,8 @@ demo.state1.prototype = {
     create: function(){
         game.stage.backgroundColor = '#DDDDDD'
         console.log('state1');
-        enterKey = game.input.keyboard.addKey(13)
+        enterKey = game.input.keyboard.addKey(13);
+        game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
     },
     update: function(){
         if (enterKey.isDown){
